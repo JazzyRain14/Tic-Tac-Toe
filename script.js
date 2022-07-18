@@ -43,7 +43,7 @@ const test = (e) => {
         // e.target.innerText=""
         initialValue = ""
         setTimeout(() => {
-            alert("You've Won");
+            text.innerHTML="You Won";
             empty();
         }, 500);
     }
@@ -52,7 +52,7 @@ const test = (e) => {
         // e.target.innerText=""
         initialValue = ""
         setTimeout(() => {
-            alert("You've Won");
+            text.innerHTML="You Won";
             empty();
         }, 500);
     }
