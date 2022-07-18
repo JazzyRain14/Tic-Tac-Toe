@@ -1,8 +1,36 @@
+h1{
+    font-size: 2.5rem;
+    text-decoration: wavy !important;
+    text-transform: capitalize;
+}
 table{
     width: 28%;
     height: 50vh;
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
 }
-table tr td{
-    width:"80px"; 
-    height:"80px";
+table #row td{
+    width:80px; 
+    height:80px;
+    font-size: 2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    /* background: #000; */
+    color: antiquewhite;
 }
+#box1{
+    border-top:0;
+    border-left: 0;
+}
+#box2{
+    border-top:0;
+}
+#box3{
+    border-top:0;
+    border-right: 0;
+}
+    /* border-top:0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0; */
