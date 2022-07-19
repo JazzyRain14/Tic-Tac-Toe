@@ -9,18 +9,102 @@ h1 {
     text-decoration: wavy !important;
     text-transform: capitalize;
     font-family: 'Permanent Marker', cursive;
+    color: #F18F43;
 }
-span{
+
+span {
     font-family: 'Fredoka One', cursive;
 }
-p{
+
+span:nth-child(1) {
+    background-color: brown;
+    background-image: linear-gradient(45deg,
+            brown 16.666%,
+            brown 16.666%,
+            #E16541 33.333%,
+            #F18F43 33.333%,
+            red 50%,
+            #8B9862 50%,
+            #8B9862 66.666%,
+            #476098 66.666%,
+            brown 83.333%,
+            brown 83.333%);
+    background-size: 100%;
+    font-size: 2rem;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span:nth-child(2) {
+    background-color: brown;
+    background-image: linear-gradient(45deg,
+            #8B9862 16%,
+            #8B9862 16%,
+            brown 50%,
+            chocolate 66.666%,
+            #E16541 33.333%,
+            #F18F43 33.333%,
+            red 50%,
+            #476098 66.666%,
+            brown 83.333%,
+            brown 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span:nth-child(3) {
+    background-color: brown;
+    background-image: linear-gradient(45deg,
+            brown 16.666%,
+            brown 16.666%,
+            #E16541 33.333%,
+            #F18F43 33.333%,
+            red 50%,
+            #8B9862 50%,
+            #8B9862 66.666%,
+            #476098 66.666%,
+            brown 83.333%,
+            brown 83.333%);
+    background-size: 100%;
+    font-size: 2rem;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#text {
+    position: relative;
+    bottom: 20px;
     width: fit-content;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     word-spacing: 10px;
+    /* border: thin solid; */
+    text-align: center;
+    width: 25%;
+    height: 80px;
     font-size: 40px;
     margin: auto;
+    background-color: #CA4246;
+    background-image: linear-gradient(45deg,
+            #CA4246 16.666%,
+            #E16541 16.666%,
+            #E16541 33.333%,
+            #F18F43 33.333%,
+            #F18F43 50%,
+            #8B9862 50%,
+            #8B9862 66.666%,
+            #476098 66.666%,
+            #476098 83.333%,
+            #A7489B 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-table {
+
+#table {
     width: 28%;
     height: 50vh;
     border-top: 0;
@@ -28,10 +112,9 @@ table {
     border-right: 0;
     border-bottom: 0;
     position: relative;
-    top: 50px;
 }
 
-table #row td {
+#table #row td {
     margin: auto;
     background-color: #1F3540;
     width: 80px;
@@ -129,4 +212,127 @@ table #row td {
     top: 5px;
     border-radius: 10px 5px;
     box-shadow: 5px 6px 5px #010e16;
+}
+
+@media screen and (max-width:450px) {
+    body {
+        background-color: #192A32;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-decoration: wavy !important;
+        text-transform: capitalize;
+        font-family: 'Permanent Marker', cursive;
+        color: #F18F43;
+    }
+
+    #text {
+        width: fit-content;
+        font-family: 'Permanent Marker', cursive;
+        word-spacing: 0 !important;
+        font-size: 30px;
+        border: thin solid;
+        background-color: #CA4246;
+        background-image: linear-gradient(45deg,
+                #CA4246 16.666%,
+                #E16541 16.666%,
+                #E16541 33.333%,
+                #F18F43 33.333%,
+                #F18F43 50%,
+                #8B9862 50%,
+                #8B9862 66.666%,
+                #476098 66.666%,
+                #476098 83.333%,
+                #A7489B 83.333%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        padding: 5px 10px;
+        margin: auto;
+    }
+
+    #table {
+        width: 90%;
+        height: 50vh;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        position: relative;
+    }
+
+    #table #row td {
+        margin: auto;
+        background-color: #1F3540;
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 3rem;
+        font-family: 'Fredoka One', cursive;
+        /* font-family: 'Permanent Marker', cursive; */
+        /* background: #000; */
+        color: antiquewhite;
+        position: relative;
+    }
+
+    .character {
+        display: grid;
+        gap: 15px;
+        /* position: relative; */
+        font-family: 'Fredoka One', cursive;
+        font-size: 1.5rem;
+        top: 8px;
+        left: 20px;
+        text-align: start;
+        border: thin solid;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        width: fit-content;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .score-board {
+        display: flex;
+        border: thin solid;
+        /* display: grid; */
+        position: relative;
+        height: 100px;
+        top: 40px;
+    }
+
+    .scores {
+        display: grid;
+        justify-content: center;
+        border: thin solid;
+        border-bottom: 0;
+        border-top: 0;
+        border-right: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .scores tr td {
+        font-size: 2.5rem;
+        text-align: center;
+        position: relative;
+        bottom: 5px;
+    }
+    .rest{
+        position: relative;
+        top: 50px;
+    }
+    .rest button{
+        border: 1px thin solid;
+        background-color: #1F3540;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: wheat;
+    }
 }

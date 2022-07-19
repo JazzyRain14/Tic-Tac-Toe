@@ -1,4 +1,18 @@
 let initialValue = "X"
+const empty = () => {
+    initialValue = "X"
+    box1.innerHTML = ""
+    box2.innerHTML = ""
+    box3.innerHTML = ""
+    box4.innerHTML = ""
+    box5.innerHTML = ""
+    box6.innerHTML = ""
+    box7.innerHTML = ""
+    box8.innerHTML = ""
+    box9.innerHTML = ""
+}
+var firstScore = Number(score1.innerHTML)
+var secondScore = Number(score2.innerHTML)
 const test = (e) => {
     // const one = document.getElementById("1").innerHTML
     // const two = document.getElementById("2").innerHTML
@@ -37,14 +51,18 @@ const test = (e) => {
     const six = document.getElementById("box6").innerHTML
     const seven = document.getElementById("box7").innerHTML
     const eight = document.getElementById("box8").innerHTML
-    const nine = document.getElementById("box9").innerHTML 
+    const nine = document.getElementById("box9").innerHTML
 
     if (one == "X" && two == "X" && three == "X" || one == "X" && four == "X" && seven == "X" || four == "X" && five == "X" && six == "X" || two == "X" && five == "X" && eight == "X" || seven == "X" && eight == "X" && nine == "X" || three == "X" && six == "X" && nine == "X" || one == "X" && five == "X" && nine == "X" || three == "X" && five == "X" && seven == "X") {
         // e.target.innerText=""
         initialValue = ""
         setTimeout(() => {
-            text.innerHTML="You Won";
+            text.innerHTML = "X Wins";
             empty();
+            firstScore = firstScore + 1
+            score1.innerHTML = firstScore
+            console.log(firstScore)
+            return;
         }, 500);
     }
 
@@ -52,20 +70,40 @@ const test = (e) => {
         // e.target.innerText=""
         initialValue = ""
         setTimeout(() => {
-            text.innerHTML="You Won";
+            text.innerHTML = "O Wins";
             empty();
+            secondScore = secondScore + 1
+            score2.innerHTML = secondScore
+            console.log(secondScore)
         }, 500);
     }
 }
-const empty = ()=>{
-    initialValue = "X"
-    box1.innerHTML = ""
-    box2.innerHTML = ""
-    box3.innerHTML = ""
-    box4.innerHTML = ""
-    box5.innerHTML = ""
-    box6.innerHTML = ""
-    box7.innerHTML = ""
-    box8.innerHTML = ""
-    box9.innerHTML = ""
+function rest(){
+    location.reload()
+}
+// const empty = ()=>{
+//     initialValue = "X"
+//     box1.innerHTML = ""
+//     box2.innerHTML = ""
+//     box3.innerHTML = ""
+//     box4.innerHTML = ""
+//     box5.innerHTML = ""
+//     box6.innerHTML = ""
+//     box7.innerHTML = ""
+//     box8.innerHTML = ""
+//     box9.innerHTML = ""
+// }
+songlist[
+    {
+        path:;
+
+    },
+{
+    path:;
+
+}
+]
+var audio = document.getElementById("audio");
+loadSong =(songlist)=>{
+    audio.src = songlist.path;
 }
