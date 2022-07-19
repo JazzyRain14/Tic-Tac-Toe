@@ -281,44 +281,61 @@ span:nth-child(3) {
 
     .character {
         display: grid;
-        gap: 15px;
+        /* gap: 15px; */
         /* position: relative; */
         font-family: 'Fredoka One', cursive;
-        font-size: 1.5rem;
-        top: 8px;
-        left: 20px;
-        text-align: start;
+        font-size: 2rem;
+        /* top: 8px; */
+        /* left: 20px; */
+        /* text-align: start; */
         border: thin solid;
-        border-top: 0;
-        border-bottom: 0;
-        border-left: 0;
+        /* border-top: 0; */
+        /* border-bottom: 0; */
+        /* border-left: 0; */
         width: fit-content;
         padding: 10px 20px 10px 20px;
     }
 
     .score-board {
-        display: flex;
-        border: thin solid;
+        /* display: flex; */
+        border: thin solid red;
         /* display: grid; */
         position: relative;
-        height: 100px;
-        top: 40px;
-    }
+        height: max-content;
+        top: 40px !important;
+        padding: 10px !important;
 
+    }
+    .score-board table{
+        border: thin solid green;
+        /* display: grid; */
+        padding: 10px;
+        width: 100%;
+    }
+    .score-board table tr{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
     .scores {
         display: grid;
-        justify-content: center;
         border: thin solid;
-        border-bottom: 0;
+        /* border-bottom: 0;
         border-top: 0;
-        border-right: 0;
-        width: 100%;
+        border-left: 0; */
+        /* border-right: 40px white !important; */
+        width: 80%;
         height: 100%;
+        font-size: 2rem;
+        font-weight: 600;
+        /* top: 0; */
         font-family: 'Fredoka One', cursive;
+        padding: 10px 20px 10px 20px;
     }
 
     .scores tr td {
-        font-size: 2.5rem;
+        border: thin solid;
+        font-size: 2rem;
         text-align: center;
         position: relative;
         bottom: 5px;

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="gamer()">
+    <audio id="audio" src="audio/Ayra-Starr-ASE.mp3" loop></audio>
     <h1 align="center"><span> tic</span>&nbsp-&nbsp<span>tac</span>&nbsp-&nbsp<span>toe</span></h1>
     <p id="text"></p>
     <table id="table" align="center" border="1px">
@@ -45,7 +46,7 @@
             </tr>
         </table>
     </div> -->
-    <table class="score-board">
+    <!-- <table class="score-board">
         <tbody class="character">
             <tr>
                 <td>X</td>
@@ -62,9 +63,20 @@
                 <td id="score2">0</td>
             </tr>
         </tbody>
-    </table>
-    <div class="rest"><button onclick="rest()">Restart</button></div>
-  <audio src="" id="audio" controls loop autoplay></audio>
+    </table> -->
+    <div class="score-board">
+        <table>
+            <tr>
+                <td class="character">X</td>
+                <td class="scores" id="score1">0</td>
+            </tr>
+            <tr>
+                <td class="character">O</td>
+                <td class="scores" id="score2">0</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <div class="rest"><button onclick="rest()">Restart</button></div> -->
     <script src="script.js"></script>
 </body>
 

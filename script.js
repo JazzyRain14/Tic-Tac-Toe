@@ -1,4 +1,7 @@
 let initialValue = "X"
+const gamer = ()=>{
+    // document.getElementById("audio").play();
+}
 const empty = () => {
     initialValue = "X"
     box1.innerHTML = ""
@@ -75,8 +78,20 @@ const test = (e) => {
             secondScore = secondScore + 1
             score2.innerHTML = secondScore
             console.log(secondScore)
+            return;
         }, 500);
     }
+//     else if(one !== "O" && two == "O" && three == "O" || one !== "O" && four == "O" && seven == "O" || four !== "O" && five == "O" && six == "O" || two !== "O" && five == "O" && eight == "O" || seven !== "O" && eight == "O" && nine == "O" || three !== "O" && six == "O" && nine == "O" || one !== "O" && five == "O" && nine == "O" || three !== "O" && five == "O" && seven == "O"|| one !== "X" && two == "X" && three == "X" || one !== "X" && four == "X" && seven == "X" || four !== "X" && five == "X" && six == "X" || two !== "X" && five == "X" && eight == "X" || seven !== "X" && eight == "X" && nine == "X" || three !== "X" && six == "X" && nine == "X" || one !== "X" && five == "X" && nine == "X" || three !== "X" && five == "X" && seven == "X"){
+//         initialValue = ""
+//         setTimeout(() => {
+//             text.innerHTML = "Draw Mate";
+//             empty();
+//             secondScore = secondScore
+//             score2.innerHTML = secondScore
+//             console.log(secondScore)
+//             return;
+//         }, 500);
+//     }
 }
 function rest(){
     location.reload()
@@ -93,17 +108,17 @@ function rest(){
 //     box8.innerHTML = ""
 //     box9.innerHTML = ""
 // }
-songlist[
-    {
-        path:;
+// songlist[
+//     {
+//         path:;
 
-    },
-{
-    path:;
+//     },
+// {
+//     path:;
 
-}
-]
-var audio = document.getElementById("audio");
-loadSong =(songlist)=>{
-    audio.src = songlist.path;
-}
+// }
+// ]
+// var audio = document.getElementById("audio");
+// loadSong =(songlist)=>{
+//     audio.src = songlist.path;
+// }
