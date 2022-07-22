@@ -1,6 +1,6 @@
 let initialValue = "X"
 const gamer = ()=>{
-    // document.getElementById("audio").play();
+    document.getElementById("audio").play();
 }
 const empty = () => {
     initialValue = "X"
@@ -17,26 +17,6 @@ const empty = () => {
 var firstScore = Number(score1.innerHTML)
 var secondScore = Number(score2.innerHTML)
 const test = (e) => {
-    // const one = document.getElementById("1").innerHTML
-    // const two = document.getElementById("2").innerHTML
-    // const three = document.getElementById("3").innerHTML
-    // const four = document.getElementById(4).innerHTML
-    // const five = document.getElementById(5).innerHTML
-    // const six = document.getElementById(6).innerHTML
-    // const seven = document.getElementById(7).innerHTML
-    // const eight = document.getElementById(8).innerHTML
-    // const nine = document.getElementById(9).innerHTML
-    // if (one == "X" && two == "X" && three == "X" || one == "X" && four == "X" && seven == "X"||four == "X" && five == "X" && six == "X" || two == "X" && five == "X" && eight == "X"|| seven == "X" && eight == "X" && nine == "X" || three == "X" && six == "X" && nine == "X" || one == "X" && five == "X" && nine == "X" || three == "X" && five == "X" && seven == "X") {
-    //     if (one == "X" && two == "X" && three == "X" || one == "X" && four == "X" && seven == "X"||four == "X" && five == "X" && six == "X" || two == "X" && five == "X" && eight == "X"|| seven == "X" && eight == "X" && nine == "X" || three == "X" && six == "X" && nine == "X" || one == "X" && five == "X" && nine == "X" || three == "X" && five == "X" && seven == "X") {
-    //         e.target.innerText=""
-    //         initialValue=""
-    //     }
-    //     alert("You've Won")
-    // }
-
-    // else if(one == "O" && two == "O" && three == "O" || one == "O" && four == "O" && seven == "O"||four == "O" && five == "O" && six == "O" || two == "O" && five == "O" && eight == "O"|| seven == "O" && eight == "O" && nine == "O" || three == "O" && six == "O" && nine == "O"|| one == "O" && five == "O" && nine == "O" || three == "O" && five == "O" && seven == "O") {
-    //     alert("You've Won")
-    // }
 
     if (initialValue == "X" && e.target.innerText == "") {
         e.target.innerText = "X"
@@ -56,17 +36,25 @@ const test = (e) => {
     const eight = document.getElementById("box8").innerHTML
     const nine = document.getElementById("box9").innerHTML
 
-    if (one == "X" && two == "X" && three == "X" || one == "X" && four == "X" && seven == "X" || four == "X" && five == "X" && six == "X" || two == "X" && five == "X" && eight == "X" || seven == "X" && eight == "X" && nine == "X" || three == "X" && six == "X" && nine == "X" || one == "X" && five == "X" && nine == "X" || three == "X" && five == "X" && seven == "X") {
+    if (one == "X" && two == "X" && three == "X" || one == "X" && four == "X" && seven == "X" || four == "X" && five == "X" && six == "X" || two == "X" && five == "X" && eight == "X" || seven == "X" && eight == "X" && nine == "X" || three == "X" && six == "X" && nine == "X" || one == "X" && five == "X" && nine == "X" || three == "X" && five == "X" && seven == "X"){
         // e.target.innerText=""
         initialValue = ""
         setTimeout(() => {
             text.innerHTML = "X Wins";
             empty();
-            firstScore = firstScore + 1
-            score1.innerHTML = firstScore
+            initialValue="O";
+            ++firstScore;
+            score1.innerHTML = firstScore;
             console.log(firstScore)
-            return;
+            // return;
         }, 500);
+        setTimeout(() => {
+            initialValue=" ";
+        }, 800);
+        setTimeout(() => {
+            text.innerHTML = "Player O turn";
+            initialValue="O"
+        }, 1000);
     }
 
     else if (one == "O" && two == "O" && three == "O" || one == "O" && four == "O" && seven == "O" || four == "O" && five == "O" && six == "O" || two == "O" && five == "O" && eight == "O" || seven == "O" && eight == "O" && nine == "O" || three == "O" && six == "O" && nine == "O" || one == "O" && five == "O" && nine == "O" || three == "O" && five == "O" && seven == "O") {
@@ -75,39 +63,32 @@ const test = (e) => {
         setTimeout(() => {
             text.innerHTML = "O Wins";
             empty();
-            secondScore = secondScore + 1
-            score2.innerHTML = secondScore
+            initialValue="O";
+            initialValue="O";
+            ++secondScore;
+            score2.innerHTML = secondScore;
             console.log(secondScore)
+            // return;
+        }, 500);
+        setTimeout(() => {
+            text.innerHTML = "Player X turn";
+        }, 1200);
+    }
+    else if(one!=""&&two!=""&&three!=""&&four!=""&&five!=""&&six!=""&&seven!=""&&eight!=""&&nine!=""){
+        initialValue = ""
+        setTimeout(() => {
+            text.innerHTML = "Draw Mate";
+            empty();
+            secondScore;
+            score2.innerHTML = secondScore;
+            console.log(secondScore);
             return;
         }, 500);
     }
-//     else if(one !== "O" && two == "O" && three == "O" || one !== "O" && four == "O" && seven == "O" || four !== "O" && five == "O" && six == "O" || two !== "O" && five == "O" && eight == "O" || seven !== "O" && eight == "O" && nine == "O" || three !== "O" && six == "O" && nine == "O" || one !== "O" && five == "O" && nine == "O" || three !== "O" && five == "O" && seven == "O"|| one !== "X" && two == "X" && three == "X" || one !== "X" && four == "X" && seven == "X" || four !== "X" && five == "X" && six == "X" || two !== "X" && five == "X" && eight == "X" || seven !== "X" && eight == "X" && nine == "X" || three !== "X" && six == "X" && nine == "X" || one !== "X" && five == "X" && nine == "X" || three !== "X" && five == "X" && seven == "X"){
-//         initialValue = ""
-//         setTimeout(() => {
-//             text.innerHTML = "Draw Mate";
-//             empty();
-//             secondScore = secondScore
-//             score2.innerHTML = secondScore
-//             console.log(secondScore)
-//             return;
-//         }, 500);
-//     }
 }
 function rest(){
     location.reload()
 }
-// const empty = ()=>{
-//     initialValue = "X"
-//     box1.innerHTML = ""
-//     box2.innerHTML = ""
-//     box3.innerHTML = ""
-//     box4.innerHTML = ""
-//     box5.innerHTML = ""
-//     box6.innerHTML = ""
-//     box7.innerHTML = ""
-//     box8.innerHTML = ""
-//     box9.innerHTML = ""
-// }
 // songlist[
 //     {
 //         path:;

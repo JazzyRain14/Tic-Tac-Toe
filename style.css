@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Permanent+Marker&display=swap');
-
+/* Style.css */
 body {
     background-color: #192A32;
+    /* overflow-y: hidden; */
 }
 
 h1 {
@@ -76,10 +77,11 @@ span:nth-child(3) {
 
 #text {
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     width: fit-content;
     font-family: 'Permanent Marker', cursive;
     word-spacing: 10px;
+    box-shadow: inset 8px 8px 10px #0c2c38, 5px 5px 10px #00080b, -6px -6px 10px #192A32;
     /* border: thin solid; */
     text-align: center;
     width: 25%;
@@ -112,6 +114,7 @@ span:nth-child(3) {
     border-right: 0;
     border-bottom: 0;
     position: relative;
+    bottom: 20px;
 }
 
 #table #row td {
@@ -213,7 +216,66 @@ span:nth-child(3) {
     border-radius: 10px 5px;
     box-shadow: 5px 6px 5px #010e16;
 }
+.score-board {
+    /* display: flex; */
+    /* border: thin solid red; */
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 10px #0c2c38, 5px 5px 10px #00080b, -6px -6px 10px #192A32;
+    /* display: grid; */
+    position: relative !important;
+    /* height: 50vh; */
+    width: 30vw;
+    left: 20px;
+    bottom: 100px !important;
+    padding: 10px !important;
 
+}
+.score-board table{
+    /* border: thin solid green; */
+    border-radius: 5px;
+    box-shadow: inset -8px -8px 10px #1F3540;
+    /* display: grid; */
+    padding: 10px;
+    width: 100%;
+}
+.score-board table tr{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.scores {
+    display: grid;
+    border: thin solid;
+    /* border-bottom: 0;
+    border-top: 0;
+    border-left: 0; */
+    /* border-right: 40px white !important; */
+    width: 80%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    /* top: 0; */
+    font-family: 'Fredoka One', cursive;
+    padding: 10px 20px 10px 20px;
+}
+.character {
+    display: grid;
+    /* gap: 15px; */
+    /* position: relative; */
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    /* top: 8px; */
+    /* left: 20px; */
+    /* text-align: start; */
+    border: thin solid;
+    /* border-top: 0; */
+    /* border-bottom: 0; */
+    /* border-left: 0; */
+    border-right: 0;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+}
+/* style.css media query*/
 @media screen and (max-width:450px) {
     body {
         background-color: #192A32;
@@ -232,7 +294,8 @@ span:nth-child(3) {
         font-family: 'Permanent Marker', cursive;
         word-spacing: 0 !important;
         font-size: 30px;
-        border: thin solid;
+        /* border: thin solid; */
+        box-shadow: inset 8px 8px 10px #0c2c38, 5px 5px 10px #00080b, -6px -6px 10px #192A32;
         background-color: #CA4246;
         background-image: linear-gradient(45deg,
                 #CA4246 16.666%,
@@ -254,6 +317,7 @@ span:nth-child(3) {
         text-align: center;
         padding: 5px 10px;
         margin: auto;
+        top: 1px;
     }
 
     #table {
@@ -264,6 +328,7 @@ span:nth-child(3) {
         border-right: 0;
         border-bottom: 0;
         position: relative;
+        top: 1px;
     }
 
     #table #row td {
@@ -298,19 +363,21 @@ span:nth-child(3) {
 
     .score-board {
         /* display: flex; */
-        border: thin solid red;
+        /* border: thin solid red; */
         /* display: grid; */
         position: relative;
         height: max-content;
-        top: 40px !important;
+        top: 15px !important;
         padding: 10px !important;
-
+        width: 80vw;
+        box-shadow: inset 8px 8px 10px #0c2c38, 5px 5px 10px #00080b, -6px -6px 10px #192A32 !important;
     }
     .score-board table{
-        border: thin solid green;
+        /* border: thin solid green; */
         /* display: grid; */
         padding: 10px;
-        width: 100%;
+        width: 100% !important;
+        box-shadow: inset -8px -8px 10px #1F3540 !important;
     }
     .score-board table tr{
         display: flex;
@@ -340,7 +407,7 @@ span:nth-child(3) {
         position: relative;
         bottom: 5px;
     }
-    .rest{
+    /* .rest{
         position: relative;
         top: 50px;
     }
@@ -351,5 +418,56 @@ span:nth-child(3) {
         font-size: 20px;
         font-weight: bolder;
         color: wheat;
-    }
+    } */
+}
+/* gamesignin.css */
+body div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    border: thin solid white;
+    padding: 60px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn button:nth-child(1){
+    /* margin-left: 30px; */
+    font-family: 'Fredoka One', cursive;
+    box-shadow: inset 8px 8px 10px #0c2c38, 5px 5px 10px #00080b, -6px -6px 10px #192A32;
+    /* border: thin solid; */
+    font-size: 60px;
+    height: 200px;
+    width: 200px;
+}
+#btn button:nth-child(2){
+    /* margin-left: 30px; */
+    
+    box-shadow: inset 8px 8px 10px #0c2c38, 5px 5px 10px #00080b, -6px -6px 10px #192A32;
+    /* border: thin solid; */
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    height: 200px;
+    width: 200px;
+}
+#btn button:nth-child(1):hover{
+    font-family: 'Permanent Marker', cursive;
+    color: red !important;
+    border-color: #0c2c38 !important;
+    /* background-color: red; */
+}
+#btn button:nth-child(2):hover{
+    font-family: 'Permanent Marker', cursive;
+    color: green !important;
+    border-color: #0c2c38 !important;
+}
+#legend{
+    position: absolute !important;
+    top: 10% !important;
+    left: 35%;
+    border: thin solid;
+    width: fit-content;
+    padding: 10px 20px;
 }
