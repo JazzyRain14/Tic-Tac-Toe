@@ -430,6 +430,7 @@ span:nth-child(3) {
     width: 100% !important;
     height: fit-content !important;
     /* border: thick solid !important; */
+    margin: auto;
 }
 #btn button:nth-child(1) {
     /* margin-left: 30px; */
@@ -496,9 +497,17 @@ span:nth-child(3) {
     animation: play 2s linear infinite;
 }
 legend{
+    /* border: thin solid black !important; */
     font-size: 2.5rem !important;
     font-weight: bolder;
     font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+}
+#title h1{
+    /* border: thin solid; */
+    font-size: 40px !important;
+}
+#title h1 span{
+    font-size: 50px !important;
 }
     
 }
@@ -516,8 +525,8 @@ body div{
     padding: 60px 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: fit-content !important;
+    align-items: center ;
+    height: fit-content ;
     width: fit-content !important;
 }
 
@@ -630,8 +639,8 @@ legend{
     bottom: 60px;
 }
 #title h1{
-    font-size: 60px !important;
+    font-size: 60px;
 }
 #title h1 span{
-    font-size: 60px !important;
+    font-size: 60px;
 }
