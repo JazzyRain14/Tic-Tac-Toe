@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="gamer()">
+    <audio id="audio" src="/audio/Sky-Puzzle_LoFi.mp3" loop></audio>
+    <h1 align="center"><span> tic</span>&nbsp-&nbsp<span>tac</span>&nbsp-&nbsp<span>toe</span></h1>
+    <p id="text"></p>
+    <table id="table" align="center" border="1px">
+        <tbody>
+            <tr id="row">
+                <td align="center" id="box1" onclick="test(event)"></td>
+                <td align="center" id="box2" onclick="test(event)"></td>
+                <td align="center" id="box3" onclick="test(event)"></td>
+            </tr>
+            <tr id="row">
+                <td align="center" id="box4" onclick="test(event)"></td>
+                <td align="center" id="box5" onclick="test(event)"></td>
+                <td align="center" id="box6" onclick="test(event)"></td>
+            </tr>
+            <tr id="row">
+                <td align="center" id="box7" onclick="test(event)"></td>
+                <td align="center" id="box8" onclick="test(event)"></td>
+                <td align="center" id="box9" onclick="test(event)"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="score-board">
+        <table>
+            <tr>
+                <td class="character">X</td>
+                <td class="scores" id="score1">0</td>
+            </tr>
+            <tr>
+                <td class="character">O</td>
+                <td class="scores" id="score2">0</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <div class="rest"><button onclick="rest()">Restart</button></div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+
 let initialValue = "X"
 const gamer = ()=>{
     document.getElementById("audio").play();
@@ -38,11 +39,11 @@ const test = (e) => {
 
     if (one == "X" && two == "X" && three == "X" || one == "X" && four == "X" && seven == "X" || four == "X" && five == "X" && six == "X" || two == "X" && five == "X" && eight == "X" || seven == "X" && eight == "X" && nine == "X" || three == "X" && six == "X" && nine == "X" || one == "X" && five == "X" && nine == "X" || three == "X" && five == "X" && seven == "X"){
         // e.target.innerText=""
-        initialValue = ""
+        // initialValue = ""
         setTimeout(() => {
             text.innerHTML = "X Wins";
             empty();
-            initialValue="O";
+            // initialValue="O";
             ++firstScore;
             score1.innerHTML = firstScore;
             console.log(firstScore)
@@ -59,20 +60,24 @@ const test = (e) => {
 
     else if (one == "O" && two == "O" && three == "O" || one == "O" && four == "O" && seven == "O" || four == "O" && five == "O" && six == "O" || two == "O" && five == "O" && eight == "O" || seven == "O" && eight == "O" && nine == "O" || three == "O" && six == "O" && nine == "O" || one == "O" && five == "O" && nine == "O" || three == "O" && five == "O" && seven == "O") {
         // e.target.innerText=""
-        initialValue = ""
+        // initialValue = ""
         setTimeout(() => {
             text.innerHTML = "O Wins";
             empty();
-            initialValue="O";
-            initialValue="O";
+            // initialValue="O";
+            // initialValue="O";
             ++secondScore;
             score2.innerHTML = secondScore;
             console.log(secondScore)
             // return;
         }, 500);
         setTimeout(() => {
+            initialValue=" ";
+        }, 800);
+        setTimeout(() => {
             text.innerHTML = "Player X turn";
-        }, 1200);
+            initialValue="X"
+        }, 1000);
     }
     else if(one!=""&&two!=""&&three!=""&&four!=""&&five!=""&&six!=""&&seven!=""&&eight!=""&&nine!=""){
         initialValue = ""
